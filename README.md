@@ -11,7 +11,13 @@ Goals:
 
 Pseudocode:
     Create The Grid via DIVs (16x16 by default).
-    Upon Mouse Hover, change the color of the div.
+    Upon Mouse Hover, change the color of the div to black.
     When The Erase Button is clicked, erase the entire grid.
     Prompt The User On A New Grid Size (MAX: 100).
     Loop back to the beginning with new grid size.
+
+    OPTIONAL:
+        Have each color change be random.
+        Subsequent hover overs the same color portion will have 10%
+        additional to black. 
+        The div will become fully black after 10 passes.
