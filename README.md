@@ -6,8 +6,8 @@ Created: 4/12/2022
 Last Modified: 4/12/2022
 
 Goals: 
-    Create an Etch A Sketch primarily via JavaScript and
-    DOM manipulation.
+    Create an Etch A Sketch with elements of
+    JavaScript and DOM manipulation integrated.
 
 Pseudocode:
     Create The Grid via DIVs (16x16 by default).
