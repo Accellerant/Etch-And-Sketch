@@ -1,41 +1,45 @@
-const GRID_MAX = 100, 
-        GRID_MIN = 1;
-
-
 /*
-Generate 
+Create a size x size grid for the page.
+Takes only a size of 1-100. Returns true/false.
 */
 function gridGen(size) {
     let grid = document.querySelector(".grid");
 
-    for(let a = 1; a <= size; a++) {
-        let gridRow = document.createElement('div');
-        gridRow.classList.add("row" + a);
-        gridRow.style.display = "flex";
-
-        for( let b = 1; b <= size; b++) {
-            let gridCell = document.createElement('div');
-            gridCell.classList.add("cell" + b);
-            gridCell.setAttribute('style', "background-color: blue; width: 25px; height: 25px");
-            gridRow.appendChild(gridCell);
+    if(gridInCheck) {
+        for(let a = 1; a <= size; a++) {
+            let gridRow = document.createElement('div');
+            gridRow.classList.add("row" + a);
+            gridRow.style.display = "flex";
+    
+            for( let b = 1; b <= size; b++) {
+                let gridCell = document.createElement('div');
+                gridCell.classList.add("cell" + b);
+                gridCell.setAttribute('style', "background-color: blue; width: 25px; height: 25px");
+                gridRow.appendChild(gridCell);
+            }
+            
+            grid.appendChild(gridRow);
+            
         }
-        
-        grid.appendChild(gridRow);
-        
+        return true;
+    } else {
+        return false;
     }
+    
 }
 
 /*
 Verify that the users grid input is a valid size.
-E.G. between 1-100. If valid, generate the grid.
+E.G. between 1-100. Returns true/false.
 */
 function gridInCheck(size = 16) {
+    const GRID_MAX = 100, GRID_MIN = 1;
+
     if (size <= GRID_MAX && size >= GRID_MIN) {
-        gridGen(size);
         return true;
     }
     else
         return false;
 }
 
-gridGen(4);
+gridGen(16);
