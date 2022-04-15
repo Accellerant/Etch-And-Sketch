@@ -1,9 +1,4 @@
 /*
-Most comments are here for my sakes to remind me
-how things work/act!
-*/
-
-/*
 Target elements which have "cell" and have them
 stand out before being changed via hover.
 */
@@ -16,3 +11,10 @@ stand out before being changed via hover.
     border-width: 1px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
