@@ -14,7 +14,6 @@ function gridGen(size) {
             for( let b = 1; b <= size; b++) {
                 let gridCell = document.createElement('div');
                 gridCell.classList.add("cell" + b);
-                gridCell.setAttribute('style', "background-color: blue; width: 25px; height: 25px");
                 gridRow.appendChild(gridCell);
             }
             

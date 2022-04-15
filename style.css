@@ -1,0 +1,5 @@
+[class*="cell"] {
+    background-color: pink;
+    width: 25px;
+    height: 25px;
+}
