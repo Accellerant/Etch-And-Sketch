@@ -4,11 +4,15 @@ stand out before being changed via hover.
 */
 [class*="cell"] {
     background-color: rgb(255, 255, 255);
-    width: 25px;
-    height: 25px;
     border-style: solid;
     border-color: #d8d8d8;
     border-width: 1px;
+    flex: 1;
+}
+
+[class*="row"] {
+    display: flex;
+    flex: 1;
 }
 
 body {
@@ -18,3 +22,12 @@ body {
     align-items: center;
     gap: 25px;
 }
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    width: 600px; 
+    height: 600px;
+}
+
+
