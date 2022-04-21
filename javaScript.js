@@ -9,7 +9,6 @@ function gridGen(size) {
         for(let a = 1; a <= size; a++) {
             let gridRow = document.createElement('div');
             gridRow.classList.add("row" + a);
-            gridRow.style.display = "flex";
     
             for( let b = 1; b <= size; b++) {
                 let gridCell = document.createElement('div');
