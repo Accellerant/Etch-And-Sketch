@@ -14,13 +14,11 @@ function gridGen(size) {
                 let gridCell = document.createElement('div');
                 gridCell.classList.add("cell" + b);
 
-                /* Target Each individual row/cell for color change */
+                /* Target Each individual cell for color change */
                 gridCell.addEventListener('mouseover', () => {
-                    console.log(
-                        gridCell.parentElement.className +
-                        " " + 
-                        gridCell.className);
+                    cellChangeColor(gridCell);
                 });
+
                 gridRow.appendChild(gridCell);
             }
             
@@ -33,6 +31,15 @@ function gridGen(size) {
     }
     
 }
+
+/*
+Change the color of the cell in their respective row.
+By default, it will change from white to black.
+*/
+function cellChangeColor(gridCell) {
+    gridCell.style.background = 'black';
+}
+
 
 /*
 Verify that the users grid input is a valid size.
