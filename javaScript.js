@@ -13,6 +13,14 @@ function gridGen(size) {
             for( let b = 1; b <= size; b++) {
                 let gridCell = document.createElement('div');
                 gridCell.classList.add("cell" + b);
+
+                /* Target Each individual row/cell for color change */
+                gridCell.addEventListener('mouseover', () => {
+                    console.log(
+                        gridCell.parentElement.className +
+                        " " + 
+                        gridCell.className);
+                });
                 gridRow.appendChild(gridCell);
             }
             
