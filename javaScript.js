@@ -56,3 +56,20 @@ function gridInCheck(size = 16) {
 }
 
 gridGen(16);
+
+
+const btnInfo = document.querySelector("#info");
+
+btnInfo.addEventListener('click', () => {
+    const msgInfo = 
+    `
+    This is a \"Etch-A-Sketch\" pseudo clone!\n          
+    Simply mouse overthe grid to change it from white to black.\n
+    Clicking \"Erase\" Will wipe the entire grid.\n
+    Clicking \"New Grid\" will allow you to make a new\n
+    grid from size 1-100.\n\n
+    Have fun!`;
+
+    alert(msgInfo);
+});
+
