@@ -73,3 +73,14 @@ btnInfo.addEventListener('click', () => {
     alert(msgInfo);
 });
 
+const btnErase = document.querySelector('#erase');
+
+btnErase.addEventListener('click', () => {
+    const cells = document.querySelectorAll('[class*="cell"]');
+    
+    cells.forEach((cell) => {
+        cell.style.background = 'white';
+    })
+
+});
+
