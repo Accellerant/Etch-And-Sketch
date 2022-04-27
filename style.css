@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+h1 {
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 25px;
+    color: #ffbc4e;
+    margin-top: 25px;
+    margin-bottom: 0px;
+}
+
 /*
 Target elements which have "cell" and have them
 stand out before being changed via hover.
@@ -21,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 25px;
+    background: #f73a3a;
 }
 
 .grid {
@@ -33,7 +46,19 @@ body {
 .buttons {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
+button {
+    width: 175px;
+    height: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: white;
+    border-style: hidden;
+    color: #c68c2c;
+    border-radius: 25px;
+    font-size: 25px;
+}
 
